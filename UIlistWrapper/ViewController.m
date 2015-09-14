@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "UIlistCellWrapper.h"
 #import "UIlistSectionWrapper.h"
-#import "WRCollectionViewController.h"
+#import "TableViewController.h"
 #import "CollectionViewController.h"
 
 @interface ViewController ()
@@ -24,7 +24,7 @@
     
     [self.dataSources addObject:[UIlistCellWrapper wr_make:^(UIlistCellWrapper *wrapper) {
         wrapper.title = @"tableView Example";
-        wrapper.cellClass = [WRTableViewController class];
+        wrapper.cellClass = [TableViewController class];
     }]];
     
     [self.dataSources addObject:[UIlistCellWrapper wr_make:^(UIlistCellWrapper *wrapper) {
@@ -32,6 +32,10 @@
         wrapper.cellClass = [CollectionViewController class];;
     }]];
     
+}
+
+- (void)configurationCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath{
+    cell.textLabel.text = [[self dataAtIndexPath:indexPath] title];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

@@ -7,9 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		450BDBF61BA71CA8003F3F68 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450BDBCC1BA71CA8003F3F68 /* CollectionViewController.m */; };
+		450BDBF71BA71CA8003F3F68 /* NibTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 450BDBCE1BA71CA8003F3F68 /* NibTableViewCell.m */; };
+		450BDBF81BA71CA8003F3F68 /* NibTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 450BDBCF1BA71CA8003F3F68 /* NibTableViewCell.xib */; };
+		450BDBFB1BA71CA8003F3F68 /* WRCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450BDBD71BA71CA8003F3F68 /* WRCollectionViewController.m */; };
+		450BDBFC1BA71CA8003F3F68 /* WRTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450BDBDA1BA71CA8003F3F68 /* WRTableViewController.m */; };
+		450BDBFD1BA71CA8003F3F68 /* UIlistCellWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 450BDBDD1BA71CA8003F3F68 /* UIlistCellWrapper.m */; };
+		450BDBFE1BA71CA8003F3F68 /* UIlistSectionWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 450BDBE01BA71CA8003F3F68 /* UIlistSectionWrapper.m */; };
+		450BDBFF1BA71CA8003F3F68 /* UICollectionViewCell+setItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 450BDBE41BA71CA8003F3F68 /* UICollectionViewCell+setItem.m */; };
+		450BDC001BA71CA8003F3F68 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 450BDBE71BA71CA8003F3F68 /* BaseTableViewCell.m */; };
+		450BDC011BA71CA8003F3F68 /* UITableCellStyleDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 450BDBE91BA71CA8003F3F68 /* UITableCellStyleDefault.m */; };
+		450BDC021BA71CA8003F3F68 /* UITableCellStyleIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 450BDBEB1BA71CA8003F3F68 /* UITableCellStyleIndicator.m */; };
+		450BDC031BA71CA8003F3F68 /* UITableCellStyleSubtitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 450BDBED1BA71CA8003F3F68 /* UITableCellStyleSubtitle.m */; };
+		450BDC041BA71CA8003F3F68 /* UITableCellStyleSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 450BDBEF1BA71CA8003F3F68 /* UITableCellStyleSystem.m */; };
+		450BDC051BA71CA8003F3F68 /* UITableCellStyleValue1.m in Sources */ = {isa = PBXBuildFile; fileRef = 450BDBF11BA71CA8003F3F68 /* UITableCellStyleValue1.m */; };
+		450BDC061BA71CA8003F3F68 /* UITableCellStyleValue2.m in Sources */ = {isa = PBXBuildFile; fileRef = 450BDBF31BA71CA8003F3F68 /* UITableCellStyleValue2.m */; };
+		450BDC071BA71CA8003F3F68 /* UITableViewCell+setItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 450BDBF51BA71CA8003F3F68 /* UITableViewCell+setItem.m */; };
+		450BDC0D1BA71D37003F3F68 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450BDC0C1BA71D37003F3F68 /* ViewController.m */; };
+		450BDC111BA71DD7003F3F68 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450BDC101BA71DD7003F3F68 /* TableViewController.m */; };
 		453F777B1B95D421006E90E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 453F777A1B95D421006E90E4 /* main.m */; };
 		453F777E1B95D421006E90E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 453F777D1B95D421006E90E4 /* AppDelegate.m */; };
-		453F77811B95D421006E90E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 453F77801B95D421006E90E4 /* ViewController.m */; };
 		453F77841B95D421006E90E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 453F77821B95D421006E90E4 /* Main.storyboard */; };
 		453F77861B95D421006E90E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 453F77851B95D421006E90E4 /* Images.xcassets */; };
 		453F77891B95D421006E90E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 453F77871B95D421006E90E4 /* LaunchScreen.xib */; };
@@ -27,13 +44,48 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		450BDBCB1BA71CA8003F3F68 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		450BDBCC1BA71CA8003F3F68 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		450BDBCD1BA71CA8003F3F68 /* NibTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NibTableViewCell.h; sourceTree = "<group>"; };
+		450BDBCE1BA71CA8003F3F68 /* NibTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NibTableViewCell.m; sourceTree = "<group>"; };
+		450BDBCF1BA71CA8003F3F68 /* NibTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibTableViewCell.xib; sourceTree = "<group>"; };
+		450BDBD61BA71CA8003F3F68 /* WRCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRCollectionViewController.h; sourceTree = "<group>"; };
+		450BDBD71BA71CA8003F3F68 /* WRCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRCollectionViewController.m; sourceTree = "<group>"; };
+		450BDBD81BA71CA8003F3F68 /* WRlistWrapperDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRlistWrapperDelegate.h; sourceTree = "<group>"; };
+		450BDBD91BA71CA8003F3F68 /* WRTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRTableViewController.h; sourceTree = "<group>"; };
+		450BDBDA1BA71CA8003F3F68 /* WRTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRTableViewController.m; sourceTree = "<group>"; };
+		450BDBDC1BA71CA8003F3F68 /* UIlistCellWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIlistCellWrapper.h; sourceTree = "<group>"; };
+		450BDBDD1BA71CA8003F3F68 /* UIlistCellWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIlistCellWrapper.m; sourceTree = "<group>"; };
+		450BDBDE1BA71CA8003F3F68 /* UIlistItemProtocal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIlistItemProtocal.h; sourceTree = "<group>"; };
+		450BDBDF1BA71CA8003F3F68 /* UIlistSectionWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIlistSectionWrapper.h; sourceTree = "<group>"; };
+		450BDBE01BA71CA8003F3F68 /* UIlistSectionWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIlistSectionWrapper.m; sourceTree = "<group>"; };
+		450BDBE31BA71CA8003F3F68 /* UICollectionViewCell+setItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+setItem.h"; sourceTree = "<group>"; };
+		450BDBE41BA71CA8003F3F68 /* UICollectionViewCell+setItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+setItem.m"; sourceTree = "<group>"; };
+		450BDBE61BA71CA8003F3F68 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		450BDBE71BA71CA8003F3F68 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		450BDBE81BA71CA8003F3F68 /* UITableCellStyleDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableCellStyleDefault.h; sourceTree = "<group>"; };
+		450BDBE91BA71CA8003F3F68 /* UITableCellStyleDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableCellStyleDefault.m; sourceTree = "<group>"; };
+		450BDBEA1BA71CA8003F3F68 /* UITableCellStyleIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableCellStyleIndicator.h; sourceTree = "<group>"; };
+		450BDBEB1BA71CA8003F3F68 /* UITableCellStyleIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableCellStyleIndicator.m; sourceTree = "<group>"; };
+		450BDBEC1BA71CA8003F3F68 /* UITableCellStyleSubtitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableCellStyleSubtitle.h; sourceTree = "<group>"; };
+		450BDBED1BA71CA8003F3F68 /* UITableCellStyleSubtitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableCellStyleSubtitle.m; sourceTree = "<group>"; };
+		450BDBEE1BA71CA8003F3F68 /* UITableCellStyleSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableCellStyleSystem.h; sourceTree = "<group>"; };
+		450BDBEF1BA71CA8003F3F68 /* UITableCellStyleSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableCellStyleSystem.m; sourceTree = "<group>"; };
+		450BDBF01BA71CA8003F3F68 /* UITableCellStyleValue1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableCellStyleValue1.h; sourceTree = "<group>"; };
+		450BDBF11BA71CA8003F3F68 /* UITableCellStyleValue1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableCellStyleValue1.m; sourceTree = "<group>"; };
+		450BDBF21BA71CA8003F3F68 /* UITableCellStyleValue2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableCellStyleValue2.h; sourceTree = "<group>"; };
+		450BDBF31BA71CA8003F3F68 /* UITableCellStyleValue2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableCellStyleValue2.m; sourceTree = "<group>"; };
+		450BDBF41BA71CA8003F3F68 /* UITableViewCell+setItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+setItem.h"; sourceTree = "<group>"; };
+		450BDBF51BA71CA8003F3F68 /* UITableViewCell+setItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+setItem.m"; sourceTree = "<group>"; };
+		450BDC0B1BA71D37003F3F68 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		450BDC0C1BA71D37003F3F68 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		450BDC0F1BA71DD7003F3F68 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		450BDC101BA71DD7003F3F68 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		453F77751B95D421006E90E4 /* UIlistWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIlistWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		453F77791B95D421006E90E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		453F777A1B95D421006E90E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		453F777C1B95D421006E90E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		453F777D1B95D421006E90E4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		453F777F1B95D421006E90E4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		453F77801B95D421006E90E4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		453F77831B95D421006E90E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		453F77851B95D421006E90E4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		453F77881B95D421006E90E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -60,6 +112,112 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		450BDBCA1BA71CA8003F3F68 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				450BDC0E1BA71D47003F3F68 /* collectionViewExample */,
+				450BDC0A1BA71CFB003F3F68 /* tableExample */,
+			);
+			name = Examples;
+			path = Module;
+			sourceTree = "<group>";
+		};
+		450BDBD41BA71CA8003F3F68 /* UIlistWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				450BDBD51BA71CA8003F3F68 /* controller */,
+				450BDBDB1BA71CA8003F3F68 /* model */,
+				450BDBE11BA71CA8003F3F68 /* view */,
+			);
+			path = UIlistWrapper;
+			sourceTree = "<group>";
+		};
+		450BDBD51BA71CA8003F3F68 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				450BDBD81BA71CA8003F3F68 /* WRlistWrapperDelegate.h */,
+				450BDBD91BA71CA8003F3F68 /* WRTableViewController.h */,
+				450BDBDA1BA71CA8003F3F68 /* WRTableViewController.m */,
+				450BDBD61BA71CA8003F3F68 /* WRCollectionViewController.h */,
+				450BDBD71BA71CA8003F3F68 /* WRCollectionViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		450BDBDB1BA71CA8003F3F68 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				450BDBDC1BA71CA8003F3F68 /* UIlistCellWrapper.h */,
+				450BDBDD1BA71CA8003F3F68 /* UIlistCellWrapper.m */,
+				450BDBDE1BA71CA8003F3F68 /* UIlistItemProtocal.h */,
+				450BDBDF1BA71CA8003F3F68 /* UIlistSectionWrapper.h */,
+				450BDBE01BA71CA8003F3F68 /* UIlistSectionWrapper.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		450BDBE11BA71CA8003F3F68 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				450BDBE21BA71CA8003F3F68 /* UICollectionViewCell */,
+				450BDBE51BA71CA8003F3F68 /* UITableViewCell */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		450BDBE21BA71CA8003F3F68 /* UICollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				450BDBE31BA71CA8003F3F68 /* UICollectionViewCell+setItem.h */,
+				450BDBE41BA71CA8003F3F68 /* UICollectionViewCell+setItem.m */,
+			);
+			path = UICollectionViewCell;
+			sourceTree = "<group>";
+		};
+		450BDBE51BA71CA8003F3F68 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				450BDBE61BA71CA8003F3F68 /* BaseTableViewCell.h */,
+				450BDBE71BA71CA8003F3F68 /* BaseTableViewCell.m */,
+				450BDBE81BA71CA8003F3F68 /* UITableCellStyleDefault.h */,
+				450BDBE91BA71CA8003F3F68 /* UITableCellStyleDefault.m */,
+				450BDBEA1BA71CA8003F3F68 /* UITableCellStyleIndicator.h */,
+				450BDBEB1BA71CA8003F3F68 /* UITableCellStyleIndicator.m */,
+				450BDBEC1BA71CA8003F3F68 /* UITableCellStyleSubtitle.h */,
+				450BDBED1BA71CA8003F3F68 /* UITableCellStyleSubtitle.m */,
+				450BDBEE1BA71CA8003F3F68 /* UITableCellStyleSystem.h */,
+				450BDBEF1BA71CA8003F3F68 /* UITableCellStyleSystem.m */,
+				450BDBF01BA71CA8003F3F68 /* UITableCellStyleValue1.h */,
+				450BDBF11BA71CA8003F3F68 /* UITableCellStyleValue1.m */,
+				450BDBF21BA71CA8003F3F68 /* UITableCellStyleValue2.h */,
+				450BDBF31BA71CA8003F3F68 /* UITableCellStyleValue2.m */,
+				450BDBF41BA71CA8003F3F68 /* UITableViewCell+setItem.h */,
+				450BDBF51BA71CA8003F3F68 /* UITableViewCell+setItem.m */,
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		450BDC0A1BA71CFB003F3F68 /* tableExample */ = {
+			isa = PBXGroup;
+			children = (
+				450BDC0F1BA71DD7003F3F68 /* TableViewController.h */,
+				450BDC101BA71DD7003F3F68 /* TableViewController.m */,
+				450BDBCD1BA71CA8003F3F68 /* NibTableViewCell.h */,
+				450BDBCE1BA71CA8003F3F68 /* NibTableViewCell.m */,
+				450BDBCF1BA71CA8003F3F68 /* NibTableViewCell.xib */,
+			);
+			name = tableExample;
+			sourceTree = "<group>";
+		};
+		450BDC0E1BA71D47003F3F68 /* collectionViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				450BDBCB1BA71CA8003F3F68 /* CollectionViewController.h */,
+				450BDBCC1BA71CA8003F3F68 /* CollectionViewController.m */,
+			);
+			name = collectionViewExample;
+			sourceTree = "<group>";
+		};
 		453F776C1B95D421006E90E4 = {
 			isa = PBXGroup;
 			children = (
@@ -83,8 +241,10 @@
 			children = (
 				453F777C1B95D421006E90E4 /* AppDelegate.h */,
 				453F777D1B95D421006E90E4 /* AppDelegate.m */,
-				453F777F1B95D421006E90E4 /* ViewController.h */,
-				453F77801B95D421006E90E4 /* ViewController.m */,
+				450BDC0B1BA71D37003F3F68 /* ViewController.h */,
+				450BDC0C1BA71D37003F3F68 /* ViewController.m */,
+				450BDBCA1BA71CA8003F3F68 /* Examples */,
+				450BDBD41BA71CA8003F3F68 /* UIlistWrapper */,
 				453F77821B95D421006E90E4 /* Main.storyboard */,
 				453F77851B95D421006E90E4 /* Images.xcassets */,
 				453F77871B95D421006E90E4 /* LaunchScreen.xib */,
@@ -200,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				453F77841B95D421006E90E4 /* Main.storyboard in Resources */,
+				450BDBF81BA71CA8003F3F68 /* NibTableViewCell.xib in Resources */,
 				453F77891B95D421006E90E4 /* LaunchScreen.xib in Resources */,
 				453F77861B95D421006E90E4 /* Images.xcassets in Resources */,
 			);
@@ -219,9 +380,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				453F77811B95D421006E90E4 /* ViewController.m in Sources */,
+				450BDBFF1BA71CA8003F3F68 /* UICollectionViewCell+setItem.m in Sources */,
+				450BDC021BA71CA8003F3F68 /* UITableCellStyleIndicator.m in Sources */,
+				450BDBF61BA71CA8003F3F68 /* CollectionViewController.m in Sources */,
+				450BDBFB1BA71CA8003F3F68 /* WRCollectionViewController.m in Sources */,
 				453F777E1B95D421006E90E4 /* AppDelegate.m in Sources */,
+				450BDC041BA71CA8003F3F68 /* UITableCellStyleSystem.m in Sources */,
+				450BDC051BA71CA8003F3F68 /* UITableCellStyleValue1.m in Sources */,
+				450BDC0D1BA71D37003F3F68 /* ViewController.m in Sources */,
+				450BDBFC1BA71CA8003F3F68 /* WRTableViewController.m in Sources */,
+				450BDC031BA71CA8003F3F68 /* UITableCellStyleSubtitle.m in Sources */,
+				450BDC071BA71CA8003F3F68 /* UITableViewCell+setItem.m in Sources */,
 				453F777B1B95D421006E90E4 /* main.m in Sources */,
+				450BDC011BA71CA8003F3F68 /* UITableCellStyleDefault.m in Sources */,
+				450BDC001BA71CA8003F3F68 /* BaseTableViewCell.m in Sources */,
+				450BDBFE1BA71CA8003F3F68 /* UIlistSectionWrapper.m in Sources */,
+				450BDC061BA71CA8003F3F68 /* UITableCellStyleValue2.m in Sources */,
+				450BDC111BA71DD7003F3F68 /* TableViewController.m in Sources */,
+				450BDBF71BA71CA8003F3F68 /* NibTableViewCell.m in Sources */,
+				450BDBFD1BA71CA8003F3F68 /* UIlistCellWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +595,7 @@
 				453F779A1B95D421006E90E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		453F779B1B95D421006E90E4 /* Build configuration list for PBXNativeTarget "UIlistWrapperTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +604,7 @@
 				453F779D1B95D421006E90E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
