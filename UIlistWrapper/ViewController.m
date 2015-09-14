@@ -7,6 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "UIlistCellWrapper.h"
+#import "UIlistSectionWrapper.h"
+#import "WRCollectionViewController.h"
+#import "CollectionViewController.h"
 
 @interface ViewController ()
 
@@ -15,9 +19,27 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self.dataSources addObject:[UIlistCellWrapper wr_make:^(UIlistCellWrapper *wrapper) {
+        wrapper.title = @"tableView Example";
+        wrapper.cellClass = [WRTableViewController class];
+    }]];
+    
+    [self.dataSources addObject:[UIlistCellWrapper wr_make:^(UIlistCellWrapper *wrapper) {
+        wrapper.title = @"collectionView Example";
+        wrapper.cellClass = [CollectionViewController class];;
+    }]];
+    
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    Class class = [[self dataAtIndexPath:indexPath] cellClass];
+    UIViewController *destinationVC = [[class alloc] init];
+    [self.navigationController pushViewController:destinationVC animated:YES];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

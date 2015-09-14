@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WRCollectionViewController.h
 //  UIlistWrapper
 //
 //  Created by 郑林琴 on 15/9/1.
@@ -7,10 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WRTableViewController.h"
 
-@interface ViewController : WRTableViewController
-
+@interface WRCollectionViewController : UIViewController
 
 @end
-
