@@ -81,6 +81,8 @@
         [self.view addSubview:self.tableView];
     }
     
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     if (self.tableView.delegate == nil) {
         self.tableView.delegate = self;
     }

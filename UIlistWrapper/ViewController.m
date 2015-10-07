@@ -11,6 +11,8 @@
 #import "UIlistSectionWrapper.h"
 #import "TableViewController.h"
 #import "CollectionViewController.h"
+#import "CollectionTableViewController.h"
+#import "HorizontalScrollTableViewCellViewController.h"
 
 @interface ViewController ()
 
@@ -21,7 +23,7 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    
+
     [self.dataSources addObject:[UIlistCellWrapper wr_make:^(UIlistCellWrapper *wrapper) {
         wrapper.title = @"tableView Example";
         wrapper.cellClass = [TableViewController class];
@@ -32,6 +34,15 @@
         wrapper.cellClass = [CollectionViewController class];;
     }]];
     
+    [self.dataSources addObject:[UIlistCellWrapper wr_make:^(UIlistCellWrapper *wrapper) {
+        wrapper.title = @"collection tableView Example";
+        wrapper.cellClass = [CollectionTableViewController class];;
+    }]];
+    
+    [self.dataSources addObject:[UIlistCellWrapper wr_make:^(UIlistCellWrapper *wrapper) {
+        wrapper.title = @"horizontal scroll tableViewCell Example";
+        wrapper.cellClass = [HorizontalScrollTableViewCellViewController class];;
+    }]];
 }
 
 - (void)configurationCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath{

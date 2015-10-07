@@ -31,6 +31,10 @@
 		453F77861B95D421006E90E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 453F77851B95D421006E90E4 /* Images.xcassets */; };
 		453F77891B95D421006E90E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 453F77871B95D421006E90E4 /* LaunchScreen.xib */; };
 		453F77951B95D421006E90E4 /* UIlistWrapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 453F77941B95D421006E90E4 /* UIlistWrapperTests.m */; };
+		457322E51BC53BF50096437F /* CollectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 457322E41BC53BF50096437F /* CollectionTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		457322E81BC548E20096437F /* CollectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 457322E71BC548E20096437F /* CollectionTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		457322EB1BC54C740096437F /* HorizontalScrollTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 457322EA1BC54C740096437F /* HorizontalScrollTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		457322EE1BC54DDF0096437F /* HorizontalScrollTableViewCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 457322ED1BC54DDF0096437F /* HorizontalScrollTableViewCellViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +96,14 @@
 		453F778E1B95D421006E90E4 /* UIlistWrapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIlistWrapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		453F77931B95D421006E90E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		453F77941B95D421006E90E4 /* UIlistWrapperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIlistWrapperTests.m; sourceTree = "<group>"; };
+		457322E31BC53BF50096437F /* CollectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionTableViewCell.h; path = ../UITableViewCell/CollectionTableViewCell.h; sourceTree = "<group>"; };
+		457322E41BC53BF50096437F /* CollectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionTableViewCell.m; path = ../UITableViewCell/CollectionTableViewCell.m; sourceTree = "<group>"; };
+		457322E61BC548E20096437F /* CollectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionTableViewController.h; sourceTree = "<group>"; };
+		457322E71BC548E20096437F /* CollectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionTableViewController.m; sourceTree = "<group>"; };
+		457322E91BC54C740096437F /* HorizontalScrollTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalScrollTableViewCell.h; sourceTree = "<group>"; };
+		457322EA1BC54C740096437F /* HorizontalScrollTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalScrollTableViewCell.m; sourceTree = "<group>"; };
+		457322EC1BC54DDF0096437F /* HorizontalScrollTableViewCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalScrollTableViewCellViewController.h; sourceTree = "<group>"; };
+		457322ED1BC54DDF0096437F /* HorizontalScrollTableViewCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalScrollTableViewCellViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +182,10 @@
 			children = (
 				450BDBE31BA71CA8003F3F68 /* UICollectionViewCell+setItem.h */,
 				450BDBE41BA71CA8003F3F68 /* UICollectionViewCell+setItem.m */,
+				457322E31BC53BF50096437F /* CollectionTableViewCell.h */,
+				457322E41BC53BF50096437F /* CollectionTableViewCell.m */,
+				457322E91BC54C740096437F /* HorizontalScrollTableViewCell.h */,
+				457322EA1BC54C740096437F /* HorizontalScrollTableViewCell.m */,
 			);
 			path = UICollectionViewCell;
 			sourceTree = "<group>";
@@ -205,6 +221,10 @@
 				450BDBCD1BA71CA8003F3F68 /* NibTableViewCell.h */,
 				450BDBCE1BA71CA8003F3F68 /* NibTableViewCell.m */,
 				450BDBCF1BA71CA8003F3F68 /* NibTableViewCell.xib */,
+				457322E61BC548E20096437F /* CollectionTableViewController.h */,
+				457322E71BC548E20096437F /* CollectionTableViewController.m */,
+				457322EC1BC54DDF0096437F /* HorizontalScrollTableViewCellViewController.h */,
+				457322ED1BC54DDF0096437F /* HorizontalScrollTableViewCellViewController.m */,
 			);
 			name = tableExample;
 			sourceTree = "<group>";
@@ -323,7 +343,7 @@
 		453F776D1B95D421006E90E4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = BL;
 				TargetAttributes = {
 					453F77741B95D421006E90E4 = {
@@ -380,6 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				457322E81BC548E20096437F /* CollectionTableViewController.m in Sources */,
 				450BDBFF1BA71CA8003F3F68 /* UICollectionViewCell+setItem.m in Sources */,
 				450BDC021BA71CA8003F3F68 /* UITableCellStyleIndicator.m in Sources */,
 				450BDBF61BA71CA8003F3F68 /* CollectionViewController.m in Sources */,
@@ -387,6 +408,7 @@
 				453F777E1B95D421006E90E4 /* AppDelegate.m in Sources */,
 				450BDC041BA71CA8003F3F68 /* UITableCellStyleSystem.m in Sources */,
 				450BDC051BA71CA8003F3F68 /* UITableCellStyleValue1.m in Sources */,
+				457322EE1BC54DDF0096437F /* HorizontalScrollTableViewCellViewController.m in Sources */,
 				450BDC0D1BA71D37003F3F68 /* ViewController.m in Sources */,
 				450BDBFC1BA71CA8003F3F68 /* WRTableViewController.m in Sources */,
 				450BDC031BA71CA8003F3F68 /* UITableCellStyleSubtitle.m in Sources */,
@@ -395,6 +417,8 @@
 				450BDC011BA71CA8003F3F68 /* UITableCellStyleDefault.m in Sources */,
 				450BDC001BA71CA8003F3F68 /* BaseTableViewCell.m in Sources */,
 				450BDBFE1BA71CA8003F3F68 /* UIlistSectionWrapper.m in Sources */,
+				457322EB1BC54C740096437F /* HorizontalScrollTableViewCell.m in Sources */,
+				457322E51BC53BF50096437F /* CollectionTableViewCell.m in Sources */,
 				450BDC061BA71CA8003F3F68 /* UITableCellStyleValue2.m in Sources */,
 				450BDC111BA71DD7003F3F68 /* TableViewController.m in Sources */,
 				450BDBF71BA71CA8003F3F68 /* NibTableViewCell.m in Sources */,
@@ -461,6 +485,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -528,6 +553,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UIlistWrapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BL.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -538,6 +564,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UIlistWrapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BL.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -556,6 +583,7 @@
 				);
 				INFOPLIST_FILE = UIlistWrapperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BL.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIlistWrapper.app/UIlistWrapper";
 			};
@@ -571,6 +599,7 @@
 				);
 				INFOPLIST_FILE = UIlistWrapperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BL.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIlistWrapper.app/UIlistWrapper";
 			};

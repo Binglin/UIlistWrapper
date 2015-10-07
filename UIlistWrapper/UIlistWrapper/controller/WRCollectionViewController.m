@@ -74,7 +74,7 @@
         }];
         
         //xib或者storyboard中没有collectionView
-        self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:[self collectionViewLayout]];
+        self.collectionView = [[UICollectionView alloc] initWithFrame:[self listFrame] collectionViewLayout:[self collectionViewLayout]];
         self.collectionView.backgroundColor = [UIColor whiteColor];
         [self.view addSubview:self.collectionView];
     }
@@ -100,6 +100,10 @@
 
 - (void)registerCells{
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"UICollectionViewCell"];
+}
+
+- (CGRect)listFrame{
+    return self.view.bounds;
 }
 
 @end

@@ -16,6 +16,10 @@
 @required
 - (void)setItem:(id)item;
 
+@optional
+
++ (CGFloat)fixCellHeight;//for UITableViewCell      固定高度使用
++ (CGSize )fixCellSize  ;//for UICollectionViewCell 固定大小时使用
 @end
 
 
