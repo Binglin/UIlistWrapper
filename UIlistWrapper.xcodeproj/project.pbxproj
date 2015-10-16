@@ -35,6 +35,7 @@
 		457322E81BC548E20096437F /* CollectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 457322E71BC548E20096437F /* CollectionTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		457322EB1BC54C740096437F /* HorizontalScrollTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 457322EA1BC54C740096437F /* HorizontalScrollTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		457322EE1BC54DDF0096437F /* HorizontalScrollTableViewCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 457322ED1BC54DDF0096437F /* HorizontalScrollTableViewCellViewController.m */; settings = {ASSET_TAGS = (); }; };
+		D4E7300B1BD09DEA0076C444 /* UIlistDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E7300A1BD09DEA0076C444 /* UIlistDataManager.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,8 @@
 		457322EA1BC54C740096437F /* HorizontalScrollTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalScrollTableViewCell.m; sourceTree = "<group>"; };
 		457322EC1BC54DDF0096437F /* HorizontalScrollTableViewCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalScrollTableViewCellViewController.h; sourceTree = "<group>"; };
 		457322ED1BC54DDF0096437F /* HorizontalScrollTableViewCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalScrollTableViewCellViewController.m; sourceTree = "<group>"; };
+		D4E730091BD09DEA0076C444 /* UIlistDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIlistDataManager.h; sourceTree = "<group>"; };
+		D4E7300A1BD09DEA0076C444 /* UIlistDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIlistDataManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,8 +141,9 @@
 			isa = PBXGroup;
 			children = (
 				450BDBD51BA71CA8003F3F68 /* controller */,
-				450BDBDB1BA71CA8003F3F68 /* model */,
 				450BDBE11BA71CA8003F3F68 /* view */,
+				D4E730081BD09DA90076C444 /* manager */,
+				450BDBDB1BA71CA8003F3F68 /* model */,
 			);
 			path = UIlistWrapper;
 			sourceTree = "<group>";
@@ -299,6 +303,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D4E730081BD09DA90076C444 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				D4E730091BD09DEA0076C444 /* UIlistDataManager.h */,
+				D4E7300A1BD09DEA0076C444 /* UIlistDataManager.m */,
+			);
+			path = manager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -421,6 +434,7 @@
 				457322E51BC53BF50096437F /* CollectionTableViewCell.m in Sources */,
 				450BDC061BA71CA8003F3F68 /* UITableCellStyleValue2.m in Sources */,
 				450BDC111BA71DD7003F3F68 /* TableViewController.m in Sources */,
+				D4E7300B1BD09DEA0076C444 /* UIlistDataManager.m in Sources */,
 				450BDBF71BA71CA8003F3F68 /* NibTableViewCell.m in Sources */,
 				450BDBFD1BA71CA8003F3F68 /* UIlistCellWrapper.m in Sources */,
 			);

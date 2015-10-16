@@ -16,24 +16,16 @@
 @end
 
 @implementation WRCollectionViewController
-@synthesize isMultiSection;
-@synthesize dataSources;
-
+@synthesize dataManager;
 
 #pragma mark - UICollectionViewDataSource
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
-    if (self.isMultiSection) {
-        return self.dataSources.count;
-    }
-    return 1;
+    return self.dataManager.count;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    if (self.isMultiSection) {
-        return [self.dataSources[section] count];
-    }
-    return self.dataSources.count;
+    return [self.dataManager countOfSection:section];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -53,10 +45,7 @@
 
 #pragma mark - data
 - (id)dataAtIndexPath:(NSIndexPath *)indexPath{
-    if (self.isMultiSection) {
-        return self.dataSources[indexPath.section][indexPath.row];
-    }
-    return self.dataSources[indexPath.row];
+    return [self.dataManager dataAtIndexPath:indexPath];
 }
 
 #pragma mark - setUp
@@ -89,9 +78,9 @@
 
 - (void)loadView{
     [super loadView];
-    self.dataSources = [NSMutableArray new];
     [self setUpCollectionView];
     [self registerCells];
+    self.dataManager = [UIlistDataManager new];
 }
 
 - (UICollectionViewLayout *)collectionViewLayout{

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "WRlistWrapperDelegate.h"
 
-@interface WRCollectionViewController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate,WRlistWrapperDelegate>
+@interface WRCollectionViewController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate,WRlistWrapperDelegate,WRlistWrapperDataSource>
 
 @property (nonatomic, readonly, strong) UICollectionView *collectionView;
 

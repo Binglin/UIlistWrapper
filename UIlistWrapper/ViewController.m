@@ -24,33 +24,33 @@
     
     [super viewDidLoad];
 
-    [self.dataSources addObject:[UIlistCellWrapper wr_make:^(UIlistCellWrapper *wrapper) {
+    [self.dataManager addObject:[UIlistCellWrapper wr_make:^(UIlistCellWrapper *wrapper) {
         wrapper.title = @"tableView Example";
         wrapper.cellClass = [TableViewController class];
     }]];
     
-    [self.dataSources addObject:[UIlistCellWrapper wr_make:^(UIlistCellWrapper *wrapper) {
+    [self.dataManager addObject:[UIlistCellWrapper wr_make:^(UIlistCellWrapper *wrapper) {
         wrapper.title = @"collectionView Example";
         wrapper.cellClass = [CollectionViewController class];;
     }]];
     
-    [self.dataSources addObject:[UIlistCellWrapper wr_make:^(UIlistCellWrapper *wrapper) {
+    [self.dataManager addObject:[UIlistCellWrapper wr_make:^(UIlistCellWrapper *wrapper) {
         wrapper.title = @"collection tableView Example";
         wrapper.cellClass = [CollectionTableViewController class];;
     }]];
     
-    [self.dataSources addObject:[UIlistCellWrapper wr_make:^(UIlistCellWrapper *wrapper) {
+    [self.dataManager addObject:[UIlistCellWrapper wr_make:^(UIlistCellWrapper *wrapper) {
         wrapper.title = @"horizontal scroll tableViewCell Example";
         wrapper.cellClass = [HorizontalScrollTableViewCellViewController class];;
     }]];
 }
 
 - (void)configurationCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath{
-    cell.textLabel.text = [[self dataAtIndexPath:indexPath] title];
+    cell.textLabel.text = [[self.dataManager dataAtIndexPath:indexPath] title];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    Class class = [[self dataAtIndexPath:indexPath] cellClass];
+    Class class = [[self.dataManager dataAtIndexPath:indexPath] cellClass];
     UIViewController *destinationVC = [[class alloc] init];
     [self.navigationController pushViewController:destinationVC animated:YES];
 }

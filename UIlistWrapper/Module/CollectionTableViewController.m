@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.dataSources = @[@"",@"",@""].mutableCopy;
+    [self.dataManager addObjectsFromArray:@[@"",@"",@""]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,7 +36,7 @@
 
 - (void)configurationCell:(CollectionTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath{
     cell.contentView.backgroundColor = [UIColor yellowColor];
-    cell.dataSources = @[@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",].mutableCopy;
+    cell.dataManager.dataSources = @[@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",].mutableCopy;
     [cell.collectionView reloadData];
 }
 

@@ -15,9 +15,9 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    self.isMultiSection = YES;
-    [self.dataSources addObject:[UIlistSectionWrapper wrapperWithRowDatas:@[@"1"]]];
-    [self.dataSources addObject:[UIlistSectionWrapper wrapperWithRowDatas:@[@"2",@"3",@"4",@"5"]]];
+    self.dataManager.isMultipleSection = YES;
+    [self.dataManager addObject:[UIlistSectionWrapper wrapperWithRowDatas:@[@"1"]]];
+    [self.dataManager addObject:[UIlistSectionWrapper wrapperWithRowDatas:@[@"2",@"3",@"4",@"5"]]];
 }
 
 - (void)registerCells{

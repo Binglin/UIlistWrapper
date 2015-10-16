@@ -12,6 +12,7 @@
 @protocol UIlistSectionProtocol <NSObject>
 
 - (NSUInteger)count;
+- (NSUInteger)countOfSection:(NSUInteger)section;
 
 @end
 

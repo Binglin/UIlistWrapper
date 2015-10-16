@@ -17,6 +17,7 @@
 
 
 @implementation CollectionTableViewCell
+@synthesize dataManager;
 
 
 - (void)layoutSubviews{
@@ -42,6 +43,8 @@
     }
     
     [self registerCells];
+    
+    self.dataManager = [UIlistDataManager new];
 }
 
 
@@ -56,10 +59,7 @@
 
 #pragma mark - UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    if (!self.isMultiSection) {
-        return self.dataSources.count;
-    }
-    return [self.dataSources[section] count];
+    return [self.dataManager countOfSection:section];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -67,7 +67,7 @@
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
     cell.backgroundColor = [UIColor yellowColor];
 
-    [cell setItem:[self dataAtIndexPath:indexPath]];
+    [cell setItem:[self.dataManager dataAtIndexPath:indexPath]];
     
     [self configurationCell:cell atIndexPath:indexPath];
     return cell;
@@ -84,19 +84,6 @@
 
 
 #pragma mark - WRlistWrapperDelegate
-@synthesize dataSources;
-@synthesize isMultiSection;
-
-- (BOOL)isMultiSection{
-    return NO;
-}
-
-- (id)dataAtIndexPath:(NSIndexPath *)indexPath{
-    if (self.isMultiSection) {
-        return self.dataSources[indexPath.section][indexPath.row];
-    }
-    return self.dataSources[indexPath.row];
-}
 
 - (void)registerCells{
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"UICollectionViewCell"];

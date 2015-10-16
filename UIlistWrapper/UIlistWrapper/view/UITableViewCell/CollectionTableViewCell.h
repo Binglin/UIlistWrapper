@@ -17,7 +17,7 @@
 @end
 
 
-@interface CollectionTableViewCell : BaseTableViewCell<UICollectionViewDataSource, UICollectionViewDelegate,WRlistWrapperDelegate>
+@interface CollectionTableViewCell : BaseTableViewCell<UICollectionViewDataSource, UICollectionViewDelegate,WRlistWrapperDelegate,WRlistWrapperDataSource>
 
 @property (nonatomic, readonly) UICollectionView *collectionView;
 

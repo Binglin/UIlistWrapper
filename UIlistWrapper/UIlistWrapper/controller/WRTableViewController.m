@@ -52,14 +52,13 @@
 @end
 
 @implementation WRTableViewController
-@synthesize dataSources;
-@synthesize isMultiSection;
+@synthesize dataManager;
 
 - (void)loadView{
     [super loadView];
-    self.dataSources = [NSMutableArray array];
     [self setUpTableView];
     [self registerCells];
+    self.dataManager = [UIlistDataManager new];
 }
 
 - (void)setUpTableView{
@@ -93,23 +92,16 @@
 
 #pragma mark - DataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    if (self.isMultiSection) {
-        id<UIlistSectionProtocol> sectionData = self.dataSources[section];
-        return sectionData.count;
-    }
-    return self.dataSources.count;
+    return [self.dataManager countOfSection:section];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    if (self.isMultiSection) {
-        return self.dataSources.count;
-    }
-    return 1;
+    return [self.dataManager count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[self identifierAtIndexPath:indexPath]];
-    [cell setItem:[self dataAtIndexPath:indexPath]];
+    [cell setItem:[self.dataManager dataAtIndexPath:indexPath]];
     [self configurationCell:cell atIndexPath:indexPath];
     return cell;
 }
@@ -120,14 +112,6 @@
 
 - (NSString *)identifierAtIndexPath:(NSIndexPath *)indexPath{
     return @"UITableViewCell";
-}
-
-#pragma mark - data
-- (id)dataAtIndexPath:(NSIndexPath *)indexPath{
-    if (self.isMultiSection) {
-        return self.dataSources[indexPath.section][indexPath.row];
-    }
-    return self.dataSources[indexPath.row];
 }
 
 - (CGRect)listFrame{

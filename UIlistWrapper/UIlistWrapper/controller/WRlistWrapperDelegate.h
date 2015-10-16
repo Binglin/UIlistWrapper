@@ -7,15 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "UIlistDataManager.h"
+
+
+@protocol WRlistWrapperDataSource <NSObject>
+
+@property (nonatomic, strong) UIlistDataManager *dataManager;
+
+@end
 
 @protocol WRlistWrapperDelegate <NSObject>
 
-@property (nonatomic, strong) NSMutableArray * dataSources;
-@property (nonatomic, assign) BOOL           isMultiSection;
 
 - (void)registerCells;
-
-- (id)dataAtIndexPath:(NSIndexPath *)indexPath;
 - (void)configurationCell:(id)cell atIndexPath:(NSIndexPath *)indexPath;
 - (NSString *)identifierAtIndexPath:(NSIndexPath *)indexPath;
 - (CGRect)listFrame;

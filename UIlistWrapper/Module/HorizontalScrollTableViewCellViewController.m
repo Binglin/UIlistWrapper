@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.dataSources = @[@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@""].mutableCopy;
+    self.dataManager.dataSources = @[@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@""].mutableCopy;
     self.tableView.rowHeight = [HorizontalScrollTableViewCell fixCellHeight];
 }
 
@@ -37,7 +37,7 @@
 
 - (void)configurationCell:(HorizontalScrollTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"");
-    cell.dataSources = @[@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@""].mutableCopy;
+    cell.dataManager.dataSources = @[@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@""].mutableCopy;
     [cell.collectionView reloadData];
 }
 

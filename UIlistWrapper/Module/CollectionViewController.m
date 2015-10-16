@@ -12,8 +12,8 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    [self.dataSources addObject:@"1"];
-    [self.dataSources addObjectsFromArray:@[@"2",@"3",@"4",@"5"]];
+    [self.dataManager addObject:@"1"];
+    [self.dataManager addObjectsFromArray:@[@"2",@"3",@"4",@"5"]];
 }
 
 - (void)configurationCell:(UICollectionViewCell *)cell atIndexPath:(NSIndexPath *)indexPath{

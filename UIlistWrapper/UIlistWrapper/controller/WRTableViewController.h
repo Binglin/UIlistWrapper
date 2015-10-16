@@ -26,7 +26,7 @@
 
 
 
-@interface WRTableViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,WRlistWrapperDelegate>
+@interface WRTableViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,WRlistWrapperDelegate,WRlistWrapperDataSource>
 
 @property (nonatomic, strong, readonly) UITableView    * tableView;
 
