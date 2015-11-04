@@ -11,8 +11,8 @@
 
 @protocol UIlistSectionProtocol <NSObject>
 
-- (NSUInteger)count;
-- (NSUInteger)countOfSection:(NSUInteger)section;
+- (NSUInteger)sectionCount;
+- (NSUInteger)rowCountInSection:(NSUInteger)section;
 
 @end
 

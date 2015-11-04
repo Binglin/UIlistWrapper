@@ -31,11 +31,13 @@
 		453F77861B95D421006E90E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 453F77851B95D421006E90E4 /* Images.xcassets */; };
 		453F77891B95D421006E90E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 453F77871B95D421006E90E4 /* LaunchScreen.xib */; };
 		453F77951B95D421006E90E4 /* UIlistWrapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 453F77941B95D421006E90E4 /* UIlistWrapperTests.m */; };
-		457322E51BC53BF50096437F /* CollectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 457322E41BC53BF50096437F /* CollectionTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		457322E81BC548E20096437F /* CollectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 457322E71BC548E20096437F /* CollectionTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		457322EB1BC54C740096437F /* HorizontalScrollTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 457322EA1BC54C740096437F /* HorizontalScrollTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		457322EE1BC54DDF0096437F /* HorizontalScrollTableViewCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 457322ED1BC54DDF0096437F /* HorizontalScrollTableViewCellViewController.m */; settings = {ASSET_TAGS = (); }; };
-		D4E7300B1BD09DEA0076C444 /* UIlistDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E7300A1BD09DEA0076C444 /* UIlistDataManager.m */; settings = {ASSET_TAGS = (); }; };
+		457322E51BC53BF50096437F /* CollectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 457322E41BC53BF50096437F /* CollectionTableViewCell.m */; };
+		457322E81BC548E20096437F /* CollectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 457322E71BC548E20096437F /* CollectionTableViewController.m */; };
+		457322EB1BC54C740096437F /* HorizontalScrollTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 457322EA1BC54C740096437F /* HorizontalScrollTableViewCell.m */; };
+		457322EE1BC54DDF0096437F /* HorizontalScrollTableViewCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 457322ED1BC54DDF0096437F /* HorizontalScrollTableViewCellViewController.m */; };
+		B45CDA0D0168312F290DA9C1 /* libPods-UIlistWrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F755078A6DF475F8EF69D44B /* libPods-UIlistWrapper.a */; };
+		D4CF7E1A1BE87BF9002DF7F2 /* UIlistPullPushManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7E191BE87BF9002DF7F2 /* UIlistPullPushManager.m */; };
+		D4E7300B1BD09DEA0076C444 /* UIlistDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E7300A1BD09DEA0076C444 /* UIlistDataManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,8 +107,13 @@
 		457322EA1BC54C740096437F /* HorizontalScrollTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalScrollTableViewCell.m; sourceTree = "<group>"; };
 		457322EC1BC54DDF0096437F /* HorizontalScrollTableViewCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalScrollTableViewCellViewController.h; sourceTree = "<group>"; };
 		457322ED1BC54DDF0096437F /* HorizontalScrollTableViewCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalScrollTableViewCellViewController.m; sourceTree = "<group>"; };
+		AA1F6D5251783307450B156C /* Pods-UIlistWrapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIlistWrapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIlistWrapper/Pods-UIlistWrapper.debug.xcconfig"; sourceTree = "<group>"; };
+		D4CF7E181BE87BF9002DF7F2 /* UIlistPullPushManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIlistPullPushManager.h; sourceTree = "<group>"; };
+		D4CF7E191BE87BF9002DF7F2 /* UIlistPullPushManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIlistPullPushManager.m; sourceTree = "<group>"; };
 		D4E730091BD09DEA0076C444 /* UIlistDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIlistDataManager.h; sourceTree = "<group>"; };
 		D4E7300A1BD09DEA0076C444 /* UIlistDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIlistDataManager.m; sourceTree = "<group>"; };
+		F418BAA5344775587DF95EAA /* Pods-UIlistWrapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIlistWrapper.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIlistWrapper/Pods-UIlistWrapper.release.xcconfig"; sourceTree = "<group>"; };
+		F755078A6DF475F8EF69D44B /* libPods-UIlistWrapper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIlistWrapper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B45CDA0D0168312F290DA9C1 /* libPods-UIlistWrapper.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +176,8 @@
 				450BDBDE1BA71CA8003F3F68 /* UIlistItemProtocal.h */,
 				450BDBDF1BA71CA8003F3F68 /* UIlistSectionWrapper.h */,
 				450BDBE01BA71CA8003F3F68 /* UIlistSectionWrapper.m */,
+				D4CF7E181BE87BF9002DF7F2 /* UIlistPullPushManager.h */,
+				D4CF7E191BE87BF9002DF7F2 /* UIlistPullPushManager.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -248,6 +258,8 @@
 				453F77771B95D421006E90E4 /* UIlistWrapper */,
 				453F77911B95D421006E90E4 /* UIlistWrapperTests */,
 				453F77761B95D421006E90E4 /* Products */,
+				6923C56BC570CA6EA181620B /* Pods */,
+				ED174B229DCF2093A81BE7B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -303,6 +315,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6923C56BC570CA6EA181620B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA1F6D5251783307450B156C /* Pods-UIlistWrapper.debug.xcconfig */,
+				F418BAA5344775587DF95EAA /* Pods-UIlistWrapper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D4E730081BD09DA90076C444 /* manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +333,14 @@
 			path = manager;
 			sourceTree = "<group>";
 		};
+		ED174B229DCF2093A81BE7B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F755078A6DF475F8EF69D44B /* libPods-UIlistWrapper.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -319,9 +348,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 453F77981B95D421006E90E4 /* Build configuration list for PBXNativeTarget "UIlistWrapper" */;
 			buildPhases = (
+				D4E35508A43B0E10E3280B4A /* Check Pods Manifest.lock */,
 				453F77711B95D421006E90E4 /* Sources */,
 				453F77721B95D421006E90E4 /* Frameworks */,
 				453F77731B95D421006E90E4 /* Resources */,
+				2C0743541DD2536C904CF5B1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -408,6 +439,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C0743541DD2536C904CF5B1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIlistWrapper/Pods-UIlistWrapper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4E35508A43B0E10E3280B4A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		453F77711B95D421006E90E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -420,6 +484,7 @@
 				450BDBFB1BA71CA8003F3F68 /* WRCollectionViewController.m in Sources */,
 				453F777E1B95D421006E90E4 /* AppDelegate.m in Sources */,
 				450BDC041BA71CA8003F3F68 /* UITableCellStyleSystem.m in Sources */,
+				D4CF7E1A1BE87BF9002DF7F2 /* UIlistPullPushManager.m in Sources */,
 				450BDC051BA71CA8003F3F68 /* UITableCellStyleValue1.m in Sources */,
 				457322EE1BC54DDF0096437F /* HorizontalScrollTableViewCellViewController.m in Sources */,
 				450BDC0D1BA71D37003F3F68 /* ViewController.m in Sources */,
@@ -563,6 +628,7 @@
 		};
 		453F77991B95D421006E90E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA1F6D5251783307450B156C /* Pods-UIlistWrapper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UIlistWrapper/Info.plist;
@@ -574,6 +640,7 @@
 		};
 		453F779A1B95D421006E90E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F418BAA5344775587DF95EAA /* Pods-UIlistWrapper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UIlistWrapper/Info.plist;

@@ -92,11 +92,11 @@
 
 #pragma mark - DataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return [self.dataManager countOfSection:section];
+    return [self.dataManager rowCountInSection:section];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return [self.dataManager count];
+    return [self.dataManager sectionCount];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{

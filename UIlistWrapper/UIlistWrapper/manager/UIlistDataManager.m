@@ -14,7 +14,6 @@
 - (instancetype)init{
     if (self = [super init]) {
         self.dataSources = [NSMutableArray new];
-        self.pageCount   = 10;
     }
     return self;
 }
@@ -31,25 +30,25 @@
 
 /***  @param more  YES添加 NO删除所有再add数据*/
 - (void)appendData:(NSArray *)datas withMore:(BOOL)more{
-    if (more == NO) {
-        [self.dataSources removeAllObjects];
+    
+    if ([datas isKindOfClass:[NSArray class]]) {
+        if (more == NO) {
+            [self.dataSources removeAllObjects];
+        }
+        [self.dataSources addObjectsFromArray:datas];
+    }else{
+        NSLog(@"@warning !!!!!!!!!!!!!!!!!!wrong formate!!!!!!!!!!!!!!!!!!!!!");
     }
-    [self.dataSources addObjectsFromArray:datas];
 }
 
-/***  判断数据是否为空*/
-- (BOOL)isEmpty{
-    return self.count == 0;
-}
-
-- (NSUInteger)count{
+- (NSUInteger)sectionCount{
     if (self.isMultipleSection) {
         return self.dataSources.count;
     }
     return 1;
 }
 
-- (NSUInteger)countOfSection:(NSUInteger)section{
+- (NSUInteger)rowCountInSection:(NSUInteger)section{
     if (self.isMultipleSection) {
         return [self.dataSources[section] count];
     }
@@ -62,17 +61,6 @@
 
 - (void)addObjectsFromArray:(NSArray *)array{
     [self.dataSources addObjectsFromArray:array];
-}
-
-
-#pragma mark - 分页
-/***  返回需要请求的pageIndex  @param more YES表示加载更多 NO表示刷新*/
-- (int )pageIndexToRequestWithMore:(BOOL)more{
-    if ((more == NO) || (self.pageIndex == 0)) {
-        return 1;
-    }
-    //request more index
-    return self.pageIndex + 1;
 }
 
 @end
