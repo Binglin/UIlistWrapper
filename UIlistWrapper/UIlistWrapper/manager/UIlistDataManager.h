@@ -6,10 +6,9 @@
 //  Copyright © 2015年 BL. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "UIlistSectionWrapper.h"
+#import <UIKit/UIKit.h>
 
-@interface UIlistDataManager : NSObject<UIlistSectionProtocol>
+@interface UIlistDataManager : NSObject
 
 /***  UITableView UICollectionView的数据来源  初始化为 [NSMutableArray array]*/
 @property (nonatomic, strong) NSMutableArray *dataSources;
@@ -28,6 +27,9 @@
 
 /***  是否是多section table  default NO*/
 @property (nonatomic, assign) BOOL isMultipleSection;
+
+- (NSUInteger)sectionCount;
+- (NSUInteger)rowCountInSection:(NSUInteger)section;
 
 @end
 

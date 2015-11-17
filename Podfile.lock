@@ -1,10 +1,19 @@
 PODS:
   - MJRefresh (2.4.12)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
 
 DEPENDENCIES:
   - MJRefresh (~> 2.4.12)
+  - ReactiveCocoa (= 2.5)
 
 SPEC CHECKSUMS:
   MJRefresh: ca8e9589895977df32d379d46e6b8a5450b3ff44
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0

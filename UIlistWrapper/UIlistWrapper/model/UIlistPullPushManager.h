@@ -34,7 +34,7 @@
 + (instancetype)managerWithPullListController:(id<UIlistViewControllerProtocol,UIlistDataPullPushProtocol>)controller;
 + (instancetype)managerWithPullPushListController:(id<UIlistViewControllerProtocol,UIlistDataPullPushProtocol>)controller;
 
-+ (instancetype)managerWithPullPushWithPageCount:(NSInteger)pageCount ListController:(id<UIlistViewControllerProtocol,UIlistDataPullPushProtocol>)controller;
++ (instancetype)managerWithPullPushWithPageCount:(int)pageCount ListController:(id<UIlistViewControllerProtocol,UIlistDataPullPushProtocol>)controller;
 
 //+ (instancetype)managerWithPullListController:(id<UIlistViewControllerProtocol>)controller loadData:(void(^)(BOOL more))loadData;
 //

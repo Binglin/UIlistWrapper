@@ -353,6 +353,7 @@
 				453F77721B95D421006E90E4 /* Frameworks */,
 				453F77731B95D421006E90E4 /* Resources */,
 				2C0743541DD2536C904CF5B1 /* Copy Pods Resources */,
+				1E59DA8D4DC1A7D94BA1E2D5 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -440,6 +441,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1E59DA8D4DC1A7D94BA1E2D5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIlistWrapper/Pods-UIlistWrapper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2C0743541DD2536C904CF5B1 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

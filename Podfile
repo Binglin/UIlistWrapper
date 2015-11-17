@@ -4,6 +4,7 @@
 target 'UIlistWrapper' do
 
 pod 'MJRefresh', '~> 2.4.12'
+pod 'ReactiveCocoa', '2.5'
 
 end
 

@@ -106,6 +106,10 @@
     return self.rowDatas.count;
 }
 
+- (NSUInteger)rowCount{
+    return [self count];
+}
+
 - (id)objectAtIndexedSubscript:(NSUInteger)idx{
     return self.rowDatas[idx];
 }

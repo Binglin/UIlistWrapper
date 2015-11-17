@@ -8,6 +8,7 @@
 
 #import "UIlistPullPushManager.h"
 #import "MJRefresh.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 typedef void(^UIlistRefreshBlock)(BOOL more);
 
@@ -52,7 +53,7 @@ typedef void(^UIlistRefreshBlock)(BOOL more);
     return pullpushManager;
 }
 
-+ (instancetype)managerWithPullPushWithPageCount:(NSInteger)pageCount ListController:(id<UIlistViewControllerProtocol,UIlistDataPullPushProtocol>)controller{
++ (instancetype)managerWithPullPushWithPageCount:(int)pageCount ListController:(id<UIlistViewControllerProtocol,UIlistDataPullPushProtocol>)controller{
     if (controller.scrollView == nil) {
         NSAssert(controller.scrollView, @"UITableView UICollectionView 还没有初始化呀");
     }
@@ -147,8 +148,8 @@ typedef void(^UIlistRefreshBlock)(BOOL more);
         @strongify(self);
         [self loadMore:NO];
     }];
-    normalHeader.lastUpdatedTimeLabel.textColor = [UIColor blackContentColor];
-    normalHeader.stateLabel.textColor = [UIColor blackContentColor];
+    normalHeader.lastUpdatedTimeLabel.textColor = [UIColor blackColor];
+    normalHeader.stateLabel.textColor = [UIColor lightGrayColor];
     self.scrollView.header = normalHeader;
     [normalHeader beginRefreshing];
 }
@@ -159,7 +160,7 @@ typedef void(^UIlistRefreshBlock)(BOOL more);
         @strongify(self);
         [self loadMore:YES];
     }];
-    normalFooter.stateLabel.textColor = [UIColor blackContentColor];
+    normalFooter.stateLabel.textColor = [UIColor blackColor];
     self.scrollView.footer = normalFooter;
     self.scrollView.footer.hidden = YES;
 }
@@ -189,3 +190,5 @@ typedef void(^UIlistRefreshBlock)(BOOL more);
 - (void)dealloc{
     NSLog(@"%@-%s",NSStringFromClass(self.class),__func__);
 }
+
+@end
