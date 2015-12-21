@@ -13,6 +13,7 @@
 #import "CollectionViewController.h"
 #import "CollectionTableViewController.h"
 #import "HorizontalScrollTableViewCellViewController.h"
+#import "PullPushListViewController.h"
 
 @interface ViewController ()
 
@@ -42,6 +43,10 @@
     [self.dataManager addObject:[UIlistCellWrapper wr_make:^(UIlistCellWrapper *wrapper) {
         wrapper.title = @"horizontal scroll tableViewCell Example";
         wrapper.cellClass = [HorizontalScrollTableViewCellViewController class];;
+    }]];
+    
+    [self.dataManager addObject:[UIlistCellWrapper wr_make:^(UIlistCellWrapper *wrapper) {
+        wrapper.cellClass = [PullPushListViewController class];
     }]];
 }
 

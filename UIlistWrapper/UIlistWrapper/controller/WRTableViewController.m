@@ -76,8 +76,10 @@
         }];
         
         //xib或者storyboard中没有tableView
-        self.tableView = [[UITableView alloc] initWithFrame:[self listFrame] style:UITableViewStylePlain];
-        [self.view addSubview:self.tableView];
+        if (self.tableView == nil) {
+            self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds) - 64) style:UITableViewStylePlain];
+            [self.view addSubview:self.tableView];
+        }
     }
     
     self.automaticallyAdjustsScrollViewInsets = NO;
@@ -88,6 +90,8 @@
     if (self.tableView.dataSource == nil) {
         self.tableView.dataSource = self;
     }
+    
+    self.tableView.tableFooterView = [UIView new];
 }
 
 #pragma mark - DataSource
@@ -114,18 +118,8 @@
     return @"UITableViewCell";
 }
 
-- (CGRect)listFrame{
-    return CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
-}
-
 - (void)registerCells{
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
 }
-
-- (void)viewWillLayoutSubviews{
-    [super viewWillLayoutSubviews];
-    self.tableView.frame = [self listFrame];
-}
-
 
 @end

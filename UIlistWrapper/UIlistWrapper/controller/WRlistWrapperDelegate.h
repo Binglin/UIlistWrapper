@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "UIlistDataManager.h"
+#import "UIlistPullPushManager.h"
 
 
 @protocol WRlistWrapperDataSource <NSObject>
@@ -16,12 +17,22 @@
 
 @end
 
+
+
+@protocol WRListPullPushDataSource <NSObject>
+
+@property (nonatomic, strong) UIlistPullPushManager *dataManager;
+
+@end
+
+
+
+
 @protocol WRlistWrapperDelegate <NSObject>
 
 
 - (void)registerCells;
 - (void)configurationCell:(id)cell atIndexPath:(NSIndexPath *)indexPath;
 - (NSString *)identifierAtIndexPath:(NSIndexPath *)indexPath;
-- (CGRect)listFrame;
 
 @end
